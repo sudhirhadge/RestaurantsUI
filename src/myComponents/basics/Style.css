@@ -1,0 +1,106 @@
+
+*{
+    background-color: rgba(255, 217, 0, 0.089);
+} 
+
+:root{
+  --main-bg-color: aliceblue ;
+  /* this technique can be used from going from dark to light mode on a button click*/
+  }
+
+/* for buttons */
+.topMain {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.btn-group button {
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  
+
+
+  /* ============== Card class ===========================================================*/
+.big{
+
+  margin: auto;
+  display: flex;
+ flex-wrap:wrap-reverse;
+ justify-content: center;
+
+}
+  .card {
+    background-color: var(--main-bg-color);
+    /* box-shadow: 0 -16px 9px 0 rgb(90 66 66 / 20%); */
+    -webkit-box-shadow: 15px -14px 47px -4px rgba(90, 78, 23, 0.83);
+-moz-box-shadow: 15px -14px 47px -4px rgba(156,42,250,0.83);
+box-shadow: 15px -14px 47px -4px rgba(156,42,250,0.83);
+    max-width: 325px;
+    margin: 5px 45px 28px;
+    text-align: center;
+    font-family: arial;
+}
+  
+  
+  .price {
+    background-color: var(--main-bg-color);
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card img {
+    float: left;
+    width:  100%; /* OR you can write 300px just to make as per card size */
+    height: 200px;
+  }
+  
+  .card .itemdetails {
+    background-color: var(--main-bg-color);
+  }
+  .card button {
+    background-color: var(--main-bg-color);
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 34%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.9;
+  }
+
+  
+  .card button:active {
+    background-color: #bb095c;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
